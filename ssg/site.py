@@ -1,6 +1,6 @@
 import sys
 from pathlib import Path
-
+from ssg import extension
 
 class Site:
     def __init__(self, source, dest, parsers=None):

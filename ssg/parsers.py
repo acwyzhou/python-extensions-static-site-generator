@@ -34,7 +34,7 @@ class Parser:
 
 class ResourceParser(Parser):
     file_exts = [".jpg", ".png", ".gif", ".css", ".html"]
-
+    filtered = hooks.filter(html["html_body"], self.base_ext)
     def parse(self, path, source, dest):
         self.copy(path, source, dest)
 
